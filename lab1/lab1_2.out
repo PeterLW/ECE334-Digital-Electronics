@@ -1,0 +1,35 @@
+
+Circuit: * FILE: lab1_2.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+
+Transient solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+gnd                                               0          6.77106e-43
+vdd                                               0          1.84526e-44
+net_2                                             0         -9.07272e-44
+net_1                                   1.48312e-35          2.80261e-43
+in_1                                              0                    0
+net_5                                             0          2.12285e-43
+net_3                                  -3.47022e-35         -6.55759e-43
+net_4                                             0          2.11396e-43
+out                                    -3.45569e-35         -6.53014e-43
+vvdd_2#branch                           1.18408e-44                    0
+vvdd_1#branch                           1.18906e-44                    0
+vvdd#branch                            -5.08185e-45                    0
+vdd#branch                             -1.03973e-46                    0
+vgnd#branch                             2.80278e-44                    0
+
+
+CPU time since last call: 0.000 seconds.
+
+Total CPU time: 0.000 seconds.
+
+Current dynamic memory usage = 135168,
+Dynamic memory limit = -135169.
+

@@ -1,0 +1,72 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_lab1_2 {} {
+  make global -name gnd -origin {130 460}
+  make nmos -W 2 -origin {120 270}
+  make pmos -W 4 -origin {100 -70}
+  make global -name gnd -origin {1060 430}
+  make nmos -W 2 -origin {1050 240}
+  make pmos -W 4 -origin {1030 -100}
+  make global -name gnd -origin {1870 400}
+  make nmos -W 2 -origin {1860 210}
+  make pmos -W 4 -origin {1840 -130}
+  make output -name out -origin {2250 70}
+  make input -name in_1 -origin {-470 160}
+  make global -orient RXY -name vdd -origin {100 -200}
+  make global -orient RXY -name vdd -origin {1030 -250}
+  make global -orient RXY -name vdd -origin {1840 -310}
+  make_wire 40 -70 -160 -70
+  make_wire -160 270 60 270
+  make_wire 250 230 120 230
+  make_wire 250 -20 100 -20
+  make_wire 100 -30 100 -20
+  make_wire 120 310 130 310
+  make_wire 130 310 130 460
+  make_wire 250 130 250 230
+  make_wire 250 130 250 -20
+  make_wire -160 -70 -160 160
+  make_wire -160 160 -160 270
+  make_wire 970 -100 770 -100
+  make_wire 770 240 990 240
+  make_wire 1180 200 1050 200
+  make_wire 1180 -50 1030 -50
+  make_wire 1030 -60 1030 -50
+  make_wire 1050 280 1060 280
+  make_wire 1060 280 1060 430
+  make_wire 1180 100 1180 200
+  make_wire 1180 100 1180 -50
+  make_wire 770 -100 770 130
+  make_wire 770 130 770 240
+  make_wire 1780 -130 1580 -130
+  make_wire 1580 210 1800 210
+  make_wire 1990 170 1860 170
+  make_wire 1990 -80 1840 -80
+  make_wire 1840 -90 1840 -80
+  make_wire 1860 250 1870 250
+  make_wire 1870 250 1870 400
+  make_wire 1990 70 1990 170
+  make_wire 1990 70 1990 -80
+  make_wire 1580 -130 1580 100
+  make_wire 1580 100 1580 210
+  make_wire 2250 70 1990 70
+  make_wire -160 160 -470 160
+  make_wire 250 130 770 130
+  make_wire 1180 100 1580 100
+  make_wire 100 -200 100 -110
+  make_wire 1030 -250 1030 -140
+  make_wire 1840 -170 1840 -310
+}
+
+proc ICON_lab1_2 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-110 0} -name in_1
+  icon_term -type output -origin {110 0} -name out
+  icon_property -origin {0 0} -size large -anchor center -label lab1_2
+  icon_line -110 -40 110 -40 110 40 -110 40 -110 -40
+  icon_property -origin {-100 0} -label in_1
+  icon_property -origin {100 0} -anchor e -label out
+  icon_property -origin {-110 260} -type user -name name
+  icon_property -origin {-110 280} -type user -name M
+  icon_property -origin {-110 300} -type user -name dpc
+}
+

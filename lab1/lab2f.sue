@@ -1,0 +1,23 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_lab2f {} {
+  make global -name gnd -origin {170 630}
+  make input -name in -origin {110 230}
+  make output -name out -origin {800 380}
+  make lab1_2 -origin {320 230}
+  make nan -origin {670 280}
+  make pulse -pulse_voltage 1 -origin {170 520}
+  make_wire 430 230 510 230
+  make_wire 510 260 590 260
+  make_wire 510 230 510 260
+  make_wire 540 280 590 280
+  make_wire 750 280 800 280
+  make_wire 800 280 800 380
+  make_wire 170 560 170 630
+  make_wire 170 480 540 480
+  make_wire 540 280 540 480
+  make_wire 170 480 170 230
+  make_wire 170 230 210 230
+  make_wire 170 230 110 230
+}
+

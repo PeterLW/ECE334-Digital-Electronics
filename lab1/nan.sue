@@ -1,0 +1,43 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_nan {} {
+  make global -orient RY -name vdd -origin {0 -140}
+  make input -name in0 -origin {-100 0}
+  make global -orient RY -name vdd -origin {160 -140}
+  make input -name in1 -origin {-100 100}
+  make global -name gnd -origin {0 140}
+  make output -name out -origin {320 -50}
+  make nan -origin {320 100}
+  make pmos -W 4 -origin {0 -100}
+  make nmos -W 4 -origin {0 0}
+  make nmos -W 4 -origin {0 100}
+  make pmos -W 4 -origin {160 -100}
+  make_wire 0 -60 0 -50
+  make_wire 0 -40 0 -50
+  make_wire -60 -100 -60 0
+  make_wire 0 -50 160 -50
+  make_wire -100 0 -60 0
+  make_wire 160 -60 160 -50
+  make_wire -60 100 100 100
+  make_wire 0 40 0 60
+  make_wire 100 -100 100 100
+  make_wire 160 -50 320 -50
+  make_wire -100 100 -60 100
+  make_text -origin {-165 -221} -text {Schematic generated from nand2 } -size large
+}
+
+proc ICON_nan args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-80 -20} -name in0
+  icon_term -type input -origin {-80 0} -name in1
+  icon_term -type output -origin {80 0} -name out
+  icon_property -origin {0 0} -size large -anchor center -label nan
+  icon_line -80 -40 80 -40 80 40 -80 40 -80 -40
+  icon_property -origin {-70 -20} -label in0
+  icon_property -origin {-70 0} -label in1
+  icon_property -origin {70 0} -anchor e -label out
+  icon_property -origin {-80 260} -type user -name name
+  icon_property -origin {-80 280} -type user -name M
+  icon_property -origin {-80 300} -type user -name dpc
+}
+

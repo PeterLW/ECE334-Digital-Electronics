@@ -1,0 +1,23 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_lab1_1 {} {
+  make resistor -orient R90 -origin {460 280}
+  make global -name gnd -origin {600 480}
+  make capacitor -capacitance 0.7pF -origin {740 380}
+  make resistor -resistance 2K -origin {600 380}
+  make pulse -pulse_voltage 2.5 -origin {350 390}
+  make_wire 350 280 420 280
+  make_wire 350 350 350 360
+  make_wire 350 350 350 280
+  make_wire 500 280 600 280
+  make_wire 740 350 740 280
+  make_wire 740 280 600 280
+  make_wire 600 280 600 340
+  make_wire 740 410 740 440
+  make_wire 740 440 600 440
+  make_wire 600 430 350 430
+  make_wire 600 430 600 420
+  make_wire 600 430 600 440
+  make_wire 600 440 600 480
+}
+

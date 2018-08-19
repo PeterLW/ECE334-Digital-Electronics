@@ -1,0 +1,29 @@
+
+Circuit: * FILE: lab2f.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+gnd                                          0
+vdd                                        2.5
+in                                           0
+net_2                              2.55149e-07
+net_1                                      2.5
+net_3                                      2.5
+out                                        2.5
+net_4                                  2.12247
+vvin#branch                                  0
+vdd#branch                        -8.78119e-09
+vgnd#branch                        5.36152e-09
+
+CPU time since last call: 0.068 seconds.
+
+Total CPU time: 0.068 seconds.
+
+Current dynamic memory usage = 135168,
+Dynamic memory limit = -135169.
+

@@ -1,0 +1,10 @@
+set NETLIST_CACHE(lab2f,cells) {{icon pulse /cad2/mmi_110708/sue/schematics/mspice/pulse.sue {}} {schematic nan /nfs/ug/homes-5/l/linwei8/334/nan.sue} {schematic lab1_2 /nfs/ug/homes-5/l/linwei8/334/lab1_2.sue}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(lab2f,level) main
+set NETLIST_CACHE(lab2f,globals) {gnd vdd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(lab2f,version) MMI_SUE5.5.4
+set NETLIST_CACHE(lab2f) {{* start main CELL lab2f} {* .SUBCKT lab2f in out } {Xlab1_2 in net_1 lab1_2 } {Xnan net_1 in out nan } {V_1 in gnd pulse 0 1 0ns 200ps 200ps 3ns 6ns } {* .ENDS	$ lab2f} {}}
+set NETLIST_CACHE(lab2f,names) {{590 280 {0 in}} {170 630 {1 gnd}} {320 230 {0 Xlab1_2}} {800 380 {1 out}} {170 520 {0 V_1}} {110 230 {1 in}} {210 230 {0 in}} {170 560 {0 gnd}} {430 230 {0 net_1}} {170 480 {0 in}} {590 260 {0 net_1}} {750 280 {0 out}} {670 280 {0 Xnan}}}
+set NETLIST_CACHE(lab2f,wires) {{430 230 510 230 net_1} {510 260 590 260 net_1} {510 230 510 260 net_1} {540 280 590 280 in} {750 280 800 280 out} {800 280 800 380 out} {170 560 170 630 gnd} {170 480 540 480 in} {540 280 540 480 in} {170 230 170 480 in} {170 230 210 230 in} {110 230 170 230 in}}

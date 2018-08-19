@@ -1,0 +1,9 @@
+set NETLIST_CACHE(nan,cells) {{icon nmos /cad2/mmi_110708/sue/schematics/mspice/nmos.sue {}} {schematic nan /nfs/ug/homes-5/l/linwei8/334/nan.sue} {icon pmos /cad2/mmi_110708/sue/schematics/mspice/pmos.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(nan,globals) {vdd gnd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(nan,version) MMI_SUE5.5.4
+set NETLIST_CACHE(nan) {{.SUBCKT nan in0 in1 out } {Xnan  nan } {M_1 out in0 vdd vdd p W='4*1u' L=lp_min ad='areap(4,sdd)' } {+ as='areap(4,sdd)' pd='perip(4,sdd)' ps='perip(4,sdd)' } {M_2 out in0 net_1 gnd n W='4*1u' L=ln_min ad='arean(4,sdd)' } {+ as='arean(4,sdd)' pd='perin(4,sdd)' ps='perin(4,sdd)' } {M_3 net_1 in1 gnd gnd n W='4*1u' L=ln_min ad='arean(4,sdd)' } {+ as='arean(4,sdd)' pd='perin(4,sdd)' ps='perin(4,sdd)' } {M_4 out in1 vdd vdd p W='4*1u' L=lp_min ad='areap(4,sdd)' } {+ as='areap(4,sdd)' pd='perip(4,sdd)' ps='perip(4,sdd)' } {.ENDS	$ nan} {}}
+set NETLIST_CACHE(nan,names) {{0 0 {0 M_2}} {0 100 {0 M_3}} {-60 -100 {0 in0}} {0 -40 {0 out}} {0 -60 {0 out}} {-60 0 {0 in0}} {0 40 {0 net_1}} {-60 100 {0 in1}} {160 -100 {0 M_4}} {0 140 {1 gnd} {2 gnd}} {0 -100 {0 M_1}} {320 100 {0 Xnan}} {0 60 {0 net_1}} {-100 0 {1 in0}} {-100 100 {1 in1}} {160 -140 {1 vdd} {2 vdd}} {160 -60 {0 out}} {0 -140 {1 vdd} {2 vdd}} {100 -100 {0 in1}} {320 -50 {1 out}}}
+set NETLIST_CACHE(nan,wires) {{0 -60 0 -50 out} {0 -50 0 -40 out} {-60 -100 -60 0 in0} {0 -50 160 -50 out} {-100 0 -60 0 in0} {160 -60 160 -50 out} {-60 100 100 100 in1} {0 40 0 60 net_1} {100 -100 100 100 in1} {160 -50 320 -50 out} {-100 100 -60 100 in1}}

@@ -1,0 +1,10 @@
+set NETLIST_CACHE(lab1,cells) {{icon pulse /cad2/mmi_110708/sue/schematics/mspice/pulse.sue {}} {icon capacitor /cad2/mmi_110708/sue/schematics/mspice/capacitor.sue {}} {icon resistor /cad2/mmi_110708/sue/schematics/mspice/resistor.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(lab1,level) main
+set NETLIST_CACHE(lab1,globals) gnd
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(lab1,version) MMI_SUE5.5.4
+set NETLIST_CACHE(lab1) {{* start main CELL lab1} {* .SUBCKT lab1  } {R_1 net_1 net_2 1K } {R_2 gnd net_1 2K } {C_1 gnd net_1 0.7pF } {VVi net_2 gnd pulse 0 2.5 0ns 200ps 200ps 3ns 6ns } {* .ENDS	$ lab1} {}}
+set NETLIST_CACHE(lab1,names) {{930 410 {0 gnd}} {450 270 {0 R_1}} {930 350 {0 net_1}} {190 400 {0 VVi}} {490 270 {0 net_1}} {700 430 {0 gnd}} {700 350 {0 net_1}} {190 590 {1 gnd}} {190 440 {0 gnd}} {190 360 {0 net_2}} {700 390 {0 R_2}} {410 270 {0 net_2}} {930 380 {0 C_1}}}
+set NETLIST_CACHE(lab1,wires) {{190 270 410 270 net_2} {190 270 190 360 net_2} {490 270 700 270 net_1} {700 270 700 350 net_1} {700 270 930 270 net_1} {930 270 930 350 net_1} {190 530 700 530 gnd} {700 530 930 530 gnd} {190 440 190 530 gnd} {930 410 930 530 gnd} {700 430 700 530 gnd} {190 530 190 590 gnd}}
